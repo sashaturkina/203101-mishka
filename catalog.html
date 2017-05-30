@@ -17,7 +17,7 @@
 	    </ul>
 	  </nav>
 	  <div class="promo">
-	    <h1 class="promo__mine-title">Каталог товаров</h1>
+	    <h1 class="mine-title">Каталог товаров</h1>
 	  </div>
 	</header>
 	<section class="catalog">
@@ -25,11 +25,12 @@
 	    <a class="catalog-item__link" href="#"><img src="http://placehold.it/260x195"></a>
 		<div class="catalogiitem__decription">
 		  <div class="catalog-item__header">
-			<a class="catalog-item__name" href="#">Зайчик-попрыгайчик</a>
-			<span class="catalog-item__text">Рост 30 см, вес 200 г</span>
+            <a class="catalog-item__name" href="#">Зайчик-попрыгайчик</a>
+            <span class="catalog-item__text">Рост 30 см, вес 200 г</span>
 		  </div>
 		  <div class="catalog-item__bottom">
-			<a class="catalog-item__price" href="#">1 200 руб.</a>
+            <span class="catalog-item__price">1 200 руб.</span>
+			<a class="catalog-item__buy" href="#"></a>
 		  </div>
 		</div>
 	  </article>
@@ -41,7 +42,8 @@
 			<span class="catalog-item__text">Диаметр 15 см, высота 10 см</span>
 		  </div>
 		  <div class="catalog-item__bottom">
-			<a class="catalog-item__price" href="#">690 руб.</a>
+            <span class="catalog-item__price">690 руб.</span>
+            <a class="catalog-item__buy" href="#"></a>
 		  </div>
 		</div>
 	  </article>
@@ -53,17 +55,18 @@
 			<span class="catalog-item__text">Диаметр 30 см, высота 30 см</span>
 		  </div>
 		  <div class="catalog-item__bottom">
-			<a class="catalog-item__price" href="#">1 500 руб.</a>
+            <span class="catalog-item__price">1 500 руб.</span>
+            <a class="catalog-item__buy" href="#"></a>
 		  </div>
 		</div>
 	  </article>
 	</section>
 	<section class="video">
 	  <h2 class="video__title"></h2>
-	  <div class="video__picture"><img src="http://placehold.it/260x150"></div>
+	  <div class="video__player"><img src="http://placehold.it/260x150"></div>
 	  <div class="video__description">
 	    <p class="video__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-	    <a class="btn" href="#">Сделать заказ</a>
+	    <a class="video__btn btn" href="#">Сделать заказ</a>
 	  </div>
 	</section>
 	<footer class="pade-footer">
@@ -79,8 +82,8 @@
 	</footer>
 	<div class="modal">
 	  <h3 class="modal__title">Добавить в корзину</h3>
-	  <span class="modal__change-size">Выберите размер:</span>
 	  <form class="modal__form" method="post" action="https://echo.htmlacademy.ru/">
+	    <span class="modal__change-size">Выберите размер:</span>
 	    <label class="modal__label-radio" for="s-size">s</label>
 	    <input class="modal__input-radio" id="s-size" name="size" type="radio" value="s" checked>
 		<label class="modal__label-radio" for="m-size">m</label>
