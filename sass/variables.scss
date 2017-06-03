@@ -1,2 +1,7 @@
-$font-primary: Open Sans, $font-back;
-$font-back: Arial, sans-serif;
+$font-primary: "Open Sans", Arial, sans-serif;
+
+@mixin font-labels() {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}

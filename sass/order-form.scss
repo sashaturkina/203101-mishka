@@ -1,0 +1,31 @@
+.order-form__item {
+  border-right: none;
+  border-left: none;
+  border-bottom: none;
+  border-top: 1px solid #62d1ba;
+}
+
+.order-form__name {
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #63d1bb;
+}
+
+.order-form__label-radio {
+  @include font-labels;
+}
+
+.order-form__label-check {
+  @include font-labels;
+}
+
+.order-form__label {
+  @include font-labels;
+}
+
+.order-form__note {
+  font-size: 14px;
+  line-height: 16px;
+  color: #444;
+}

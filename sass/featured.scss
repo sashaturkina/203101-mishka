@@ -1,36 +1,27 @@
-.featured {
-  &__title {
-    font-family: $font-family;
+.featured__title {
+    font-family: $font-primary;
     font-size: 25px;
     color: #000;
   }
 
-  &__week-product {
+.featured__week-product {
     font-family: $font-primary;
     font-weight: bold;
     color: #63d1bb;
     text-transform: uppercase;
   }
 
-  &__text {
-    font-family: $font-primary;
-    font-weight: normal;
-    color: #000;
+.featured__text {
     line-height: 24px;
   }
 
-  &__table {
-    font-family: $font-primary;
-    font-weight: regular;
-    color: #000;
+.featured__table {
     line-height: 24px;
   }
 
-  &__price {
-    font-family: $font-primary;
+.featured__price {
     font-size: 17px;
     font-weight: bold;
     color: #444;
     line-height: 24px;
   }
-}
