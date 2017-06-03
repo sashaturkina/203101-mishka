@@ -1,0 +1,21 @@
+.reviews__title {
+  @include font(25px, 30px);
+  font-weight: bold;
+}
+
+.reviews__text {
+  line-height: 30px;
+}
+
+.reviews__author {
+  line-height: 24px;
+  font-style: normal;
+}
+
+.reviews__author-tag {
+  line-height: 30px;
+}
+
+.reviews__btn {
+  @include font(18px, 20px);
+}

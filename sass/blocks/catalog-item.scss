@@ -1,0 +1,17 @@
+.catalog-item__name {
+  font-family: $font-primary;
+  @include font(17px, 24px);
+  font-weight: bold;
+  text-decoration: none;
+  color: $text-color;
+}
+
+.catalog-item__text {
+  @include font(13px, 30px);
+  color: $btn-color;
+}
+
+.catalog-item__price {
+  @include font(15px, 24px);
+  font-weight: bold;
+}

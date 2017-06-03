@@ -1,0 +1,10 @@
+@mixin font-labels() {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+@mixin font($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
