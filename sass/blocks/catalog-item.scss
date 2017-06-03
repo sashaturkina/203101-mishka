@@ -1,20 +1,17 @@
 .catalog-item__name {
   font-family: $font-primary;
-  font-size: 17px;
+  @include font(17px, 24px);
   font-weight: bold;
-  line-height: 24px;
   text-decoration: none;
-  color: #000;
+  color: $text-color;
 }
 
 .catalog-item__text {
-  font-size: 13px;
-  line-height: 30px;
-  color: #444;
+  @include font(13px, 30px);
+  color: $btn-color;
 }
 
 .catalog-item__price {
-  font-size: 15px;
-  line-height: 24px;
+  @include font(15px, 24px);
   font-weight: bold;
 }

@@ -1,11 +1,11 @@
 .categories {
-  background-color: #63d1bb;
+  background-color: $primary-color;
 }
 
 .categories__link {
   font-family: $font-primary;
-  font-size: 19px;
+  @include font(19px, 24px);
   font-weight: bold;
-  color: #fff;
+  color: $text-color--light;
   text-decoration: none;
 }

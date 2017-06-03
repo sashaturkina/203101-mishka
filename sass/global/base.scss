@@ -1,7 +1,6 @@
 body {
   font-family: $font-primary;
-  font-size: 15px;
+  @include font(15px, 20px);
   font-weight: normal;
-  line-height: 20px;
-  color: #000;
+  color: $text-color;
 }

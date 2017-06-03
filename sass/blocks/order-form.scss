@@ -2,14 +2,14 @@
   border-right: none;
   border-left: none;
   border-bottom: none;
-  border-top: 1px solid #62d1ba;
+  border-top: 1px solid $primary-color;
 }
 
 .order-form__name {
-  font-size: 17px;
+  @include font(17px, 20px);
   font-weight: bold;
   text-transform: uppercase;
-  color: #63d1bb;
+  color: $primary-color;
 }
 
 .order-form__label-radio {
@@ -25,7 +25,6 @@
 }
 
 .order-form__note {
-  font-size: 14px;
-  line-height: 16px;
-  color: #444;
+  @include font(14px, 16px);
+  color: $btn-color;
 }

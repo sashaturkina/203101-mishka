@@ -1,0 +1,8 @@
+.video__title {
+  @include font(17px, 24px);
+}
+
+.video__text {
+  @include font(13px, 24px);
+  color: $btn-color;
+}

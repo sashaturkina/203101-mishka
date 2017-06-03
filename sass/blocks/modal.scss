@@ -1,24 +1,22 @@
 .modal__title {
-  font-size: 25px;
-  line-height: 30px;
+  @include font(25px, 30px);
 }
 
 .modal__change-size {
-  font-size: 15px;
+  @include font(15px, 30px);
   font-weight: normal;
-  line-height: 30px;
 }
 
 .modal__label-radio {
+  @include font(17px, 20px);
   font-weight: bold;
-  font-size: 17px;
   text-transform: uppercase;
 }
 
 .modal__btn {
   font-family: $font-primary;
-  font-size: 17px;
+  @include font(17px, 20px);
   font-weight: bold;
-  color: #fff;
-  background-color: #63d1bb;
+  color: $text-color--light;
+  background-color: $primary-color;
 }

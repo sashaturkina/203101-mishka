@@ -1,0 +1,26 @@
+.featured__title {
+  font-family: $font-primary;
+  @include font(25px, 30px);
+  color: $text-color;
+}
+
+.featured__week-product {
+  font-family: $font-primary;
+  font-weight: bold;
+  color: $primary-color;
+  text-transform: uppercase;
+}
+
+.featured__text {
+  @include font(15px, 24px);
+}
+
+.featured__table {
+  @include font(15px, 24px);
+}
+
+.featured__price {
+  @include font(17px, 24px);
+  font-weight: bold;
+  color: $btn-color;
+}
