@@ -1,13 +1,178 @@
 .main-nav {
+  position: relative;
   @include font(17px, 24px);
   font-weight: bold;
 }
 
+.main-nav__list {
+  padding: 0;
+  margin: 0;
+}
+
 .main-nav__item {
   list-style: none;
+  border-top: 1px solid #ececec;
 
   & a {
+  display: block;
   text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 75px;
   color: $text-color;
+  }
+
+  &--new {
+    display: none;
+  }
+
+  &--sale {
+    display: none;
+  }
+
+  &--search {
+    position: relative;
+  }
+
+  &--search a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 30px;
+    left: 30px;
+    background-image: url(../img/icon-search.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+
+  &--cart a {
+    position: relative;
+    margin-left: 50px;
+  }
+
+  &--cart a::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    left: -50px;
+    background-image: url(../img/icon-cart.svg);
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+}
+
+@media #{$mobile-widths-only} {
+  .main-nav--closed .main-nav__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .main-nav {
+    border-bottom: 1px solid $border-color;
+  }
+
+  .main-nav__list {
+    @include container();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    order: 3;
+  }
+
+  .main-nav__item {
+    border: 0;
+
+    & a {
+     padding: 0;
+    }
+
+    &--cart {
+      order: 3;
+    }
+
+    &--catalog {
+      order: 4;
+      margin-bottom: -65px;
+    }
+
+    &--knitting {
+      order: 5;
+      margin-bottom: -65px;
+      margin-right: auto;
+      margin-left: 35px;
+    }
+
+    &--search {
+      width: 84px;
+      height: 90px;
+      order: 2;
+      font-size: 0;
+      border: 1px solid $border-color;
+      border-bottom: none;
+    }
+
+    &--search a::before {
+      top: 40px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .main-nav {
+    width: 100%;
+  }
+
+  .main-nav__list {
+    margin-bottom: 0;
+  }
+
+  .main-nav__item {
+    margin: 0;
+    width: 190px;
+
+    &--catalog {
+      order: 1;
+    }
+
+    &--knitting {
+      order: 2;
+    }
+
+    &--search {
+      order: 4;
+      margin-right: 30px;
+      width: 90px;
+    }
+
+    &--cart {
+      width: 240px;
+      margin-left: 0;
+      order: 5;
+    }
+
+    &--new {
+      display: block;
+      order: 6;
+      margin-bottom: -65px;
+      width: 225px;
+    }
+
+    &--sale {
+      display: block;
+      order: 7;
+      margin-bottom: -65px;
+      margin-right: auto;
+    }
   }
 }

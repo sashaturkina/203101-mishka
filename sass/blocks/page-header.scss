@@ -1,0 +1,49 @@
+.page-header {
+  @include container();
+}
+
+.page-header__toggle {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  display: block;
+  width: 20px;
+  height: 15px;
+  background-image: url(../img/icon-menu-open.svg);
+  background-size: 20px 15px;
+  background-repeat: no-repeat;
+}
+
+@media #{$tablet-widths} {
+
+  .page-header {
+    width: auto;
+  }
+
+  .page-header__top {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .page-header__top .logo {
+    display: none;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
+}
+
+@media #{$desktop-widths} {
+
+.page-header__top {
+  display: none;
+}
+
+  .page-header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -45px;
+  }
+}

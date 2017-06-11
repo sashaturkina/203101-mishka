@@ -1,0 +1,19 @@
+.logo-big {
+  display: none;
+}
+
+@media #{$tablet-widths} {
+  .logo-big {
+    display: block;
+    order: 1;
+    margin-right: 200px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .logo-big {
+    order: 3;
+    width: 164px;
+    margin-right: 0;
+  }
+}

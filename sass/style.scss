@@ -2,6 +2,8 @@
 @import "mixins";
 @import "normalize";
 @import "global/base";
+@import "blocks/page-header";
+@import "blocks/logo";
 @import "blocks/promo";
 @import "blocks/main-title";
 @import "blocks/intro-text";
@@ -18,3 +20,6 @@
 @import "blocks/page-footer";
 @import "blocks/copyright";
 @import "blocks/modal";
+@import "blocks/social-link";
+@import "blocks/social-links";
+@import "blocks/logo-big";

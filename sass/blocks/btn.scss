@@ -4,4 +4,9 @@
   color: $btn-color;
   text-decoration: none;
   text-transform: uppercase;
+  display: block;
+  width: 256px;
+  border: 2px solid $btn-color;
+  padding: 14px 0;
+  text-align: center;
 }

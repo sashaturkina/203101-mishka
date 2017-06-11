@@ -1,0 +1,14 @@
+.logo {
+  display: block;
+  width: 86px;
+  min-height: 36px;
+  font-size: 0;
+  margin: 0 auto;
+  padding: 22px 0;
+}
+
+@media #{$tablet-widths} {
+  .logo {
+    margin: 0;
+  }
+}

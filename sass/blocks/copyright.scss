@@ -1,4 +1,29 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include container();
+  border-top: 1px solid $border-color;
+  padding: 22px 0;
+
+}
+
 .copyright__text {
   @include font(18px, 20px);
   font-weight: bold;
+  margin-right: 30px;
+}
+
+.copyright__link {
+  font-size: 0;
+  width: 28px;
+  height: 35px;
+}
+@media #{$tablet-widths} {
+
+  .copyright {
+    border: 0;
+    width: auto;
+    margin: 0;
+  }
 }

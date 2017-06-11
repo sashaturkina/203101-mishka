@@ -1,10 +1,128 @@
+.about-us__wrapper {
+  @include container();
+}
+
 .about-us__title {
   @include font(25px, 30px);
   color: $text-color;
+  margin: 0;
+  margin-bottom: 87px;
 }
 
 .about-us__list {
   @include font(17px, 20px);
   font-weight: bold;
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us__item {
+  position: relative;
+  margin-bottom: 86px;
+
+
+  &--ecology::before {
+    content: "";
+    position: absolute;
+    width: 33px;
+    height: 39px;
+    top: -56px;
+    left: 8px;
+    background-image: url("../img/icon-feature-1.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--style::before {
+    content: "";
+    position: absolute;
+    width: 48px;
+    height: 28px;
+    top: -47px;
+    left: 0;
+    background-image: url("../img/icon-feature-3.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--likes::before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 28px;
+    top: -52px;
+    left: 8px;
+    background-image: url("../img/icon-feature-5.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--knitting::before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 35px;
+    top: -55px;
+    left: 4px;
+    background-image: url("../img/icon-feature-2.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--rocket::before {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 25px;
+    top: -53px;
+    left: -6px;
+    background-image: url("../img/icon-feature-4.svg");
+    background-repeat: no-repeat;
+  }
+
+  &--present::before {
+    content: "";
+    position: absolute;
+    width: 34px;
+    height: 34px;
+    top: -56px;
+    left: 4px;
+    background-image: url("../img/icon-feature-6.svg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media #{$tablet-widths} {
+
+  .about-us__title {
+    @include font(43px, 50px);
+  }
+
+  .about-us__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+    flex-wrap: wrap;
+  }
+
+  .about-us__item {
+    @include font(20px, 22px);
+    margin-bottom: 110px;
+  }
+
+  .about-us__item:nth-child(odd) {
+    width: 245px;
+  }
+
+  .about-us__item:nth-child(even) {
+    width: 300px;
+    margin-left: auto;
+  }
+
+}
+
+@media #{$desktop-widths} {
+
+  .about-us__wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
 }

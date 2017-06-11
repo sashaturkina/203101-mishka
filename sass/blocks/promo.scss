@@ -1,12 +1,47 @@
 .promo {
   background-color: $bg-color;
+
   &--index {
     background-image: url(../img/hero-mobile@1x.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 
 .promo-text {
   @include font(13px, 24px);
   color: $btn-color;
+}
+
+.promo__note {
+  display: none;
+}
+
+@media #{$tablet-widths} {
+  .promo--index {
+    background-size: cover;
+    width: 100%;
+  }
+
+  .promo__note {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding-top: 20px;
+  }
+
+  .promo__wrapper {
+    @include container();
+  }
+}
+
+@media #{$desktop-widths} {
+  .promo--index {
+    background-image: url("../img/hero-desktop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
 }
