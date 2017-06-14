@@ -1,0 +1,24 @@
+
+@media #{$tablet-widths} {
+
+  .page-header {
+    width: auto;
+  }
+
+  .page-header__top {
+    display: flex;
+    width: 668px;
+    margin: 0 auto;
+  }
+
+  .page-header__top .logo {
+    display: none;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  
+
+
+}

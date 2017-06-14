@@ -1,3 +1,9 @@
+.featured__wrapper {
+  @include container();
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .featured__title {
   font-family: $font-primary;
   @include font(25px, 30px);
@@ -19,8 +25,119 @@
   @include font(15px, 24px);
 }
 
+.featured__field,
+.featured__value {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ebebeb;
+  border-collapse: collapse;
+}
+
+.featured__content {
+  margin-bottom: 30px;
+}
+
 .featured__price {
   @include font(17px, 24px);
   font-weight: bold;
   color: $btn-color;
+  display: block;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.featured__image {
+  margin-bottom: 30px;
+}
+
+.featured__btn {
+  margin-bottom: 34px;
+}
+
+@media #{$tablet-widths} {
+  .featured__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+  .featured__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+    flex-basis: 100%;
+  }
+
+  .featured__content {
+    width: 290px;
+    margin-right: auto;
+    flex-basis: 50%;
+  }
+
+  .featured__title {
+    margin: 0;
+  }
+
+  .featured__week-product {
+    width: 100px;
+    text-align: center;
+  }
+
+  .featured__text {
+    @include font(15px, 30px);
+    margin: 0;
+    margin-bottom: 47px;
+  }
+
+  .featured__image {
+    flex-basis: 50%;
+  }
+
+  .featured__image img {
+    width: 334px;
+    height: auto;
+  }
+}
+
+@media #{$desktop-widths} {
+
+  .featured__wrapper {
+    padding-left: 330px;
+  }
+
+  .featured__content {
+    margin-right: 60px;
+    flex-basis: auto;
+  }
+
+  .featured__header {
+    align-items: center;
+    margin-left: -170px;
+  }
+
+  .featured__title {
+    @include font(53px, 57px);
+    order: 2;
+    flex-grow: 1;
+  }
+
+  .featured__image {
+    margin-top: -150px;
+    z-index: -1;
+  }
+
+  .featured__image img {
+    width: 525px;
+    height: 635px;
+  }
+
+  .featured__week-product {
+    margin-right: 70px;
+  }
+
+  .featured__footer {
+    margin-top: -150px;
+  }
 }

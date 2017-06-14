@@ -1,15 +1,23 @@
-.order-form__item {
-  border-right: none;
-  border-left: none;
-  border-bottom: none;
-  border-top: 1px solid $primary-color;
+.order-form {
+  @include container();
+  padding-left: 30px;
+  padding-right: 30px;
 }
+
+.order-form__item {
+  border: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
 
 .order-form__name {
   @include font(17px, 20px);
   font-weight: bold;
   text-transform: uppercase;
   color: $primary-color;
+  margin-bottom: 20px;
 }
 
 .order-form__label-radio {
@@ -27,4 +35,47 @@
 .order-form__note {
   @include font(14px, 16px);
   color: $btn-color;
+}
+
+.order-form__footer {
+  margin-bottom: 55px;
+}
+
+@media #{$tablet-widths} {
+
+  .order-form__wrapper {
+    padding: 50px;
+    display: flex;
+  }
+
+  .order-form__name {
+    width: 167px;
+  }
+
+  .order-form__group {
+  }
+
+  .order-form__item {
+
+    &--color,
+    &--tel,
+    &--mail {
+      background-color: $bg-color;
+    }
+  }
+
+  .order-form__footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .order-form__note {
+    order: 2;
+  }
+}
+
+@media #{$desktop-widths} {
+  .order-form__name {
+    width: 175px;
+  }
 }

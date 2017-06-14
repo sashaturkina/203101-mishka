@@ -1,3 +1,36 @@
 .page-footer {
   background-color: $bg-color;
 }
+
+@media #{$mobile-widths-only} {
+
+  .page-footer__logo {
+    display: none;
+  }
+}
+
+
+@media #{$tablet-widths} {
+
+  .page-footer__wrapper {
+    @include container;
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 50px;
+    align-items: center;
+
+  }
+
+  .page-footer__logo {
+    margin: 0;
+    padding: 0;
+    margin-right: 100px;
+  }
+
+}
+
+@media #{$desktop-widths} {
+  .page-footer__wrapper {
+    margin-bottom: 0;
+  }
+}
