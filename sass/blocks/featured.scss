@@ -103,14 +103,18 @@
 
 @media #{$desktop-widths} {
 
+  .featured__wrapper {
+    padding-left: 330px;
+  }
+
   .featured__content {
-    margin-left: auto;
     margin-right: 60px;
     flex-basis: auto;
   }
 
   .featured__header {
     align-items: center;
+    margin-left: -170px;
   }
 
   .featured__title {
