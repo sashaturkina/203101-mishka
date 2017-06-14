@@ -1,5 +1,7 @@
 .featured__wrapper {
   @include container();
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .featured__title {
@@ -54,9 +56,10 @@
 
 @media #{$tablet-widths} {
   .featured__wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
     align-items: flex-start;
 }
 

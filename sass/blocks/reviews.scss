@@ -1,5 +1,7 @@
 .reviews__wrapper {
   @include container();
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .reviews__slides {
@@ -97,6 +99,8 @@
   .reviews__wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
   .reviews__title {
@@ -152,5 +156,7 @@
   .reviews__wrapper {
     width: 875px;
     margin-left: 175px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }

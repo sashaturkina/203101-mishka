@@ -1,0 +1,32 @@
+.catalog__wrapper {
+  @include container();
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media #{$tablet-widths} {
+  .catalog-item {
+    display: flex;
+  }
+
+  .catalog-item__link {
+    width: 336px;
+    height: 336px;
+
+    & img {
+      width: 336px;
+      height: 336px;
+    }
+  }
+
+  .catalog-item__description {
+    width: 280px;
+    margin: 0;
+  }
+}
+
+@media #{$desktop-widths} {
+  .catalog__wrapper {
+    display: flex;
+  }
+}

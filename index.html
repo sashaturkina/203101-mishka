@@ -10,31 +10,26 @@
 
 <body>
   <header class="page-header">
-    <div class="page-header__top">
-      <a class="logo"><img src="/img/logo-mobile.svg" width="86px" height="36px" alt="mishka logo">Mishka</a>
-      <span class="page-header__toggle page-header__toggle--open"></span>
-    </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--opened">
+      <span class="main-nav__toggle"></span>
       <ul class="main-nav__list">
-        <li class="main-nav__item logo-big"><img src="../img/logo-mobile.svg" alt="Mishka"></li>
+        <li class="main-nav__item main-nav__item--logo logo"><img src="img/logo-mobile.svg" alt="Mishka"></li>
         <li class="main-nav__item main-nav__item--new"><a href="#">Новые поступления</a></li>
         <li class="main-nav__item main-nav__item--sale"><a href="#">Распродажа</a></li>
-        <li class="main-nav__item main-nav__item--catalog"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="main-nav__item main-nav__item--knitting"><a href="form.html">Вязание на заказ</a></li>
-        <li class="main-nav__item main-nav__item--search"><a href="#">Поиск по сайту</a></li>
-        <li class="main-nav__item main-nav__item--cart"><a href="#">Корзина: пока пуста</a></li>
+        <li class="main-nav__item main-nav__item--catalog main-nav__item--invisible"><a href="catalog.html">Каталог товаров</a></li>
+        <li class="main-nav__item main-nav__item--knitting main-nav__item--invisible"><a href="form.html">Вязание на заказ</a></li>
+        <li class="main-nav__item main-nav__item--search main-nav__item--invisible"><a href="#">Поиск по сайту</a></li>
+        <li class="main-nav__item main-nav__item--cart main-nav__item--invisible"><a href="#">Корзина: пока пуста</a></li>
       </ul>
     </nav>
     <div class="promo promo--index">
-      <div class="promo__wrapper">
-        <p class="promo__note">Бесплатная доставка по России</p>
-        <h1 class="main-title">Милые штуки ручной<br> работы для дома</h1>
-      </div>
+      <p class="promo__note">Бесплатная доставка по России</p>
+      <h1 class="main-title">Милые штуки ручной работы&nbsp;для дома</h1>
     </div>
   </header>
   <section class="categories">
-    <a class="categories__link categories__link--interior" href="#">Предметы<br> интерьера</a>
-    <a class="categories__link categories__link--toys" href="#">Детские<br> игрушки</a>
+    <a class="categories__link categories__link--interior" href="#"><span class="categories__link-text">Предметы интерьера</span></a>
+    <a class="categories__link categories__link--toys" href="#"><span class="categories__link-text">Детские игрушки</span></a>
   </section>
   <article class="featured">
     <div class="featured__wrapper">
@@ -122,7 +117,7 @@
   </section>
   <section class="contacts">
     <div class="contacts__wrapper">
-      <h3 class="contacts__title">Контакты</h3>
+      <h2 class="contacts__title">Контакты</h2>
       <div class="contacts__inner">
         <div class="contacts__item">
           <span class="contacts__label">e-mail:</span>
@@ -168,7 +163,7 @@
   </div>
   <script>
     var navMain = document.querySelector('.main-nav');
-    var navToggle = document.querySelector('.page-header__toggle');
+    var navToggle = document.querySelector('.main-nav__toggle');
 
     navToggle.addEventListener('click', function() {
       if (navMain.classList.contains('main-nav--closed')) {
