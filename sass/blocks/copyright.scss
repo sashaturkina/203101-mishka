@@ -4,7 +4,7 @@
   align-items: center;
   @include container();
   border-top: 1px solid $border-color;
-  padding: 22px 0;
+  padding: 15px 0;
 
 }
 
@@ -25,5 +25,9 @@
     border: 0;
     width: auto;
     margin: 0;
+  }
+
+  .copyright__text {
+    @include font(19px, 20px);
   }
 }

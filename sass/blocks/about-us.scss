@@ -1,3 +1,7 @@
+.about-us {
+  margin-bottom: 60px;
+}
+
 .about-us__wrapper {
   @include container();
   padding-left: 30px;
@@ -12,7 +16,6 @@
 }
 
 .about-us__list {
-  @include font(17px, 20px);
   font-weight: bold;
   list-style: none;
   margin: 0;
@@ -20,10 +23,19 @@
 }
 
 .about-us__item {
+  @include font(17px, 18px);
   margin-bottom: 86px;
 }
 
+.about-us__item:last-child {
+  margin-bottom: 0;
+}
+
 @media #{$tablet-widths} {
+
+  .about-us {
+    margin-bottom: 50px;
+  }
 
   .about-us__wrapper {
     padding-right: 50px;
@@ -32,30 +44,47 @@
 
   .about-us__title {
     @include font(43px, 50px);
+    margin-bottom: 105px;
   }
 
   .about-us__list {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
     flex-wrap: wrap;
+
   }
 
   .about-us__item {
     @include font(20px, 22px);
     margin-bottom: 110px;
-  }
+    flex-basis: 50%;
 
-  .about-us__item:nth-child(odd) {
-    width: 245px;
-  }
+    &--ecology {
+      order: 1;
+    }
 
-  .about-us__item:nth-child(even) {
-    width: 300px;
-    margin-left: auto;
-  }
+    &--knitting {
+      order: 2;
+    }
 
+    &--style {
+      order: 3;
+    }
+
+    &--rocket {
+      order: 4;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--present {
+      order: 6;
+    }
+  }
 }
 
 @media #{$desktop-widths} {
@@ -63,5 +92,10 @@
   .about-us__wrapper {
     width: 700px;
     margin: 0 auto;
+  }
+
+  .about-us__title {
+    @include font(53px, 57px);
+    margin-bottom: 105px;
   }
 }
