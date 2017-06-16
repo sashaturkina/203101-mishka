@@ -7,7 +7,18 @@
   display: block;
   width: 256px;
   border: 2px solid $btn-color;
-  padding: 14px 0;
+  padding: 12px 0;
   text-align: center;
   background-color: transparent;
+}
+
+.btn:hover {
+  color: $text-color--light;
+  background-color: $btn-color;
+}
+
+.btn:active {
+  color: #8a8a8a;
+  background-color: $btn-color;
+
 }

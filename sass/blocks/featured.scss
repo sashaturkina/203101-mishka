@@ -1,17 +1,28 @@
+.featured {
+  margin-bottom: 70px;
+}
+
 .featured__wrapper {
   @include container();
   padding-left: 30px;
   padding-right: 30px;
 }
 
+.featured__header {
+  margin-bottom: 25px;
+}
+
 .featured__title {
   font-family: $font-primary;
   @include font(25px, 30px);
   color: $text-color;
+  margin: 0;
+  margin-bottom: 3px;
 }
 
 .featured__week-product {
   font-family: $font-primary;
+  @include font(17px, 20px);
   font-weight: bold;
   color: $primary-color;
   text-transform: uppercase;
@@ -27,8 +38,9 @@
 
 .featured__field,
 .featured__value {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 6px;
+  padding-right: 25px;
+  padding-bottom: 6px;
   border-bottom: 1px solid #ebebeb;
   border-collapse: collapse;
 }
@@ -43,11 +55,11 @@
   color: $btn-color;
   display: block;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .featured__image {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .featured__btn {
@@ -55,17 +67,23 @@
 }
 
 @media #{$tablet-widths} {
+
+  .featured {
+    margin-bottom: 85px;
+  }
+
   .featured__wrapper {
     padding-left: 50px;
     padding-right: 50px;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-}
+  }
 
   .featured__header {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     margin-bottom: 55px;
     flex-basis: 100%;
   }
@@ -77,34 +95,56 @@
   }
 
   .featured__title {
+    @include font(43px, 50px);
     margin: 0;
   }
 
   .featured__week-product {
     width: 100px;
     text-align: center;
+    padding-right: 15px;
   }
 
   .featured__text {
-    @include font(15px, 30px);
+    @include font(17px, 30px);
     margin: 0;
-    margin-bottom: 47px;
+    margin-bottom: 30px;
+    padding-right: 40px;
   }
 
   .featured__image {
     flex-basis: 50%;
+    margin-bottom: 0;
   }
 
   .featured__image img {
     width: 334px;
     height: auto;
   }
+
+  .featured__footer {
+    margin-top: -115px;
+    width: 290px;
+  }
+
+  .featured__btn {
+    width: auto;   //не срабатывает
+  }
+
+  .featured__price {
+    @include font(20px, 24px);
+    margin-bottom: 35px;
+  }
 }
 
 @media #{$desktop-widths} {
 
+  .featured {
+    margin-bottom: 150px;
+  }
+
   .featured__wrapper {
-    padding-left: 330px;
+    padding-left: 325px;
   }
 
   .featured__content {
@@ -123,9 +163,16 @@
     flex-grow: 1;
   }
 
+  .featured__text {
+    @include font(17px, 30px);
+    padding-right: 0;
+    margin-bottom: 45px;
+  }
+
   .featured__image {
-    margin-top: -150px;
+    margin-top: -160px;
     z-index: -1;
+    margin-bottom: 0;
   }
 
   .featured__image img {
@@ -134,10 +181,17 @@
   }
 
   .featured__week-product {
-    margin-right: 70px;
+    margin-right: 25px;
+    margin-left: 25px;
   }
 
   .featured__footer {
-    margin-top: -150px;
+    margin-top: -110px;
+    margin-bottom: 0;
+  }
+
+  .featured__btn {
+    flex-basis: 286px; //не фурычит
+    margin-bottom: 0;
   }
 }

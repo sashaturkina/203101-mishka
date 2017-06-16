@@ -26,6 +26,11 @@
 }
 
 @media #{$tablet-widths} {
+
+  .promo {
+    margin-bottom: 85px;
+  }
+
   .promo--index {
     background-size: cover;
     width: 100%;
@@ -48,6 +53,10 @@
 }
 
 @media #{$desktop-widths} {
+
+  .promo {
+    margin-bottom: 115px;
+  }
   .promo--index {
     background-image: url("../img/hero-desktop.jpg");
     background-repeat: no-repeat;
@@ -57,7 +66,7 @@
 
   .promo__note {
     max-width: 1200px;
-    padding-left: 910px;
+    padding-left: 965px;
     box-sizing: border-box;
   }
 

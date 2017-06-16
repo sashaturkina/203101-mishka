@@ -1,25 +1,24 @@
 .main-title {
-  width: 255px;
-  line-height: 30px;
+  @include font(27px, 30px);
   margin: 0;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 75px;
   margin: 0 auto;
   text-align: center;
 
-  &--catalog {
-    padding-top: 73px;
+  &--index {
+    width: 255px;
   }
 }
 
 @media #{$tablet-widths} {
   .main-title {
+    @include font(43px, 50px);
     width: 510px;
-    padding-top: 80px;
+    padding-top: 55px;
 
-
-    &--catalog {
-      padding-top: 100px;
+    &--index {
+      padding-top: 115px;
     }
   }
 }
@@ -29,7 +28,10 @@
   .main-title {
     @include font(53px, 57px);
     width: 625px;
-    padding-top: 100px;
     padding-bottom: 115px;
+
+    &--index {
+      padding-top: 115px;
+    }
   }
 }
