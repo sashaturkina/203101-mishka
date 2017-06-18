@@ -191,7 +191,8 @@
   }
 
   .featured__btn {
-    flex-basis: 286px; //не фурычит
+    display: block;
+    width: 288px;
     margin-bottom: 0;
   }
 }

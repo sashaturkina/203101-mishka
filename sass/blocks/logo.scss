@@ -10,5 +10,25 @@
 @media #{$tablet-widths} {
   .logo {
     margin: 0;
+    width: 115px;
+    height: 48px;
+  }
+
+  .logo__img {
+    width: 115px;
+    height: 48px;
+  }
+}
+
+@media #{$desktop-widths} {
+  .logo {
+    width: 153px;
+    height: 75px;
+    padding: 0;
+  }
+
+  .logo__img {
+    width: 153px;
+    height: 75px;
   }
 }

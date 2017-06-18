@@ -1,5 +1,5 @@
 .categories {
-  background-color: $primary-color;
+
   margin-bottom: 30px;
 }
 
@@ -15,14 +15,15 @@
   padding-bottom: 30px;
   padding-right: 150px;
 
+  &--interior {
+    background-color: $primary-color;
+  }
+
   &--toys {
     background-color: $secondary-color;
   }
 }
 
-.categories__link:hover {
-  padding-bottom: 35px;
-}
 
 .categories__link-text {
   display: block;
@@ -37,13 +38,18 @@
     width: 670px;
     margin: 0 auto;
     margin-bottom: 40px;
-    margin-top: -120px;
+    margin-top: -200px;
   }
 
   .categories__link {
     @include font(20px, 30px);
     flex-basis: 50%;
     padding-top: 30px;
+  }
+
+  .categories__link:hover {
+    margin-top: -6px;
+    padding-bottom: 36px;
   }
 }
 
@@ -54,14 +60,20 @@
     @include container();
     margin-bottom: 0;
     margin-bottom: 115px;
-    margin-top: -130px;
+    margin-top: -231px;
     z-index: 10;
   }
 
   .categories__link {
     @include font(20px, 30px);
-    padding-top: 35px;
+    padding-left: 36px;
+    padding-top: 28px;
     padding-bottom: 35px;
+  }
+
+  .categories__link:hover {
+    margin-top: -6px;
+    padding-bottom: 39px;
   }
 
   .categories__link-text {
