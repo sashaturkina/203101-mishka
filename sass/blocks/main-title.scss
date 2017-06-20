@@ -7,17 +7,19 @@
   text-align: center;
 
   &--index {
-    width: 255px;
+    max-width: 260px;
   }
 }
 
 @media #{$tablet-widths} {
+
   .main-title {
     @include font(43px, 50px);
-    width: 510px;
+    max-width: 510px;
     padding-top: 55px;
 
     &--index {
+      max-width: 668px;
       padding-top: 115px;
     }
   }
