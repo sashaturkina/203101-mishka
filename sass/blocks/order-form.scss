@@ -15,7 +15,6 @@
   }
 }
 
-
 .order-form__name {
   @include font(17px, 20px);
   font-weight: bold;
@@ -100,6 +99,18 @@
   border: 2px solid $btn-color;
 }
 
+.order-form__label-check::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 11px;
+  width: 15px;
+  height: 7px;
+  border-left: 2px solid #000000;
+  border-bottom: 2px solid #000000;
+  transform: rotate(-45deg);
+}
+
 .order-form__label {
   @include font-labels();
   display: block;
@@ -115,10 +126,36 @@
   border-bottom: 2px solid #000000;
   padding-bottom: 16px;
   margin-bottom: 20px;
+
+  &:hover {
+    border-bottom: 2px solid $primary-color;
+  }
+
+  &:focus {
+    border-bottom: 2px solid $primary-color;
+  }
 }
+
+
 
 .order-form__input:last-child {
   margin-bottom: 11px;
+}
+
+.order-form__input-radio + .order-form__label-radio::before {
+  display: none;
+}
+
+.order-form__input-radio:checked + .order-form__label-radio::before {
+  display: block;
+}
+
+.order-form__input-check + .order-form__label-check::before {
+  display: none;
+}
+
+.order-form__input-check:checked + .order-form__label-check::before {
+  display: block;
 }
 
 .order-form__input-tel {
@@ -129,6 +166,62 @@
   margin-bottom: 10px;
 }
 
+.order-form__input::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+.order-form__input:-moz-placeholder {
+  opacity: 0.3;
+}
+.order-form__input::-moz-placeholder {
+  opacity: 0.3;
+}
+.order-form__input:-ms-input-placeholder {
+  opacity: 0.3;
+}
+
+
+.order-form__input-tel::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+.order-form__input-tel:-moz-placeholder {
+  opacity: 0.3;
+}
+.order-form__input-tel::-moz-placeholder {
+  opacity: 0.3;
+}
+.order-form__input-tel:-ms-input-placeholder {
+  opacity: 0.3;
+}
+
+
+.order-form__input-mail::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+.order-form__input-mail:-moz-placeholder {
+  opacity: 0.3;
+}
+.order-form__input-mail::-moz-placeholder {
+  opacity: 0.3;
+}
+.order-form__input-mail:-ms-input-placeholder {
+  opacity: 0.3;
+}
+
+
+.order-form__textarea::-webkit-input-placeholder {
+  opacity: 0.3;
+}
+.order-form__textarea:-moz-placeholder {
+  opacity: 0.3;
+}
+.order-form__textarea::-moz-placeholder {
+  opacity: 0.3;
+}
+.order-form__textarea:-ms-input-placeholder {
+  opacity: 0.3;
+}
+
+
 .order-form__textarea {
   @include font(17px, 18px);
   width: 226px;
@@ -136,6 +229,13 @@
   border: 2px solid $btn-color;
   padding: 15px;
 
+  &:hover {
+    border: 2px solid $primary-color;
+  }
+
+  &:focus {
+    border: 2px solid $primary-color;
+  }
 }
 
 .order-form__note {
@@ -226,20 +326,18 @@
 
   .order-form__input {
     @include font(19px, 20px);
-    width: 355px;
+    width: 70%;
+    flex-grow: 1;
+    margin-left: 26px;
     margin-bottom: 36px;
     padding-left: 18px;
-
-    &:first-of-type {
-      width: 410px;
-    }
   }
 
   .order-form__input-tel,
   .order-form__input-mail {
     @include font(19px, 18px);
     background-color: transparent;
-    width: 483px;
+    flex-grow: 1;
     padding-left: 17px;
   }
 
@@ -273,8 +371,13 @@
     width: 50px;
     height: 48px;
     top: -15px;
+  }
 
-
+  .order-form__label-check::before {
+    top: -3px;
+    left: 11px;
+    width: 30px;
+    height: 15px;
   }
 
   .order-form__label-radio::after {
@@ -349,11 +452,7 @@
   }
 
   .order-form__input {
-    width: 556px;
-
-    &:first-of-type {
-    width: 607px;
-    }
+    width: 75%;
   }
 
   .order-form__input-mail {

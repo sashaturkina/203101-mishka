@@ -1,0 +1,23 @@
+@mixin font-labels() {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 18px;
+}
+
+@mixin font($size, $line-height) {
+  font-size: $size;
+  line-height: $line-height;
+}
+
+@mixin container()  {
+  width: 260px;
+  margin: 0 auto;
+
+  @media #{$tablet-widths} {
+    width: 668px;
+  }
+
+  @media #{$desktop-widths} {
+    width: 1050px;
+  }
+}

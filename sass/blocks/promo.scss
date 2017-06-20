@@ -9,6 +9,10 @@
     background-size: cover;
     margin-bottom: 0;
     min-height: 280px;
+
+    @media retina {
+      background-image: url(../img/hero-desktop@2x.jpg);
+    }
   }
 }
 
@@ -29,10 +33,21 @@
 
   .promo {
     margin-bottom: 80px;
+    position: relative;
+    z-index: -5;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 20px;
+      bottom: 0;
+      background-image: url(../img/bg-zigzag-fill.svg);
+      background-repeat: repeat-x;
+      z-index: 10;
+    }
 
     &--index {
-      background-size: cover;
-      width: 100%;
       min-height: 750px;
       background-image: url(../img/hero-desktop@1x.jpg);
 
@@ -45,10 +60,9 @@
 
   .promo__note {
     display: block;
-    width: 100%;
-    max-width: 768px;
-    margin: 0;
-    padding-left: 490px;
+    max-width: 668px;
+    margin: 0 auto;
+    padding-left: 437px;
     padding-top: 20px;
     box-sizing: border-box;
   }
@@ -66,15 +80,13 @@
     margin-bottom: 108px;
 
     &--index {
-      background-image: url("../img/hero-desktop.jpg");
       background-repeat: no-repeat;
-      background-size: cover;
-      width: 100%;
       background-image: url(../img/hero-desktop@1x.jpg);
+      background-color: #f9f9f9;
+      background-size: 1250px 747px;
 
       @media retina {
         background-image: url(../img/hero-desktop@2x.jpg);
-        background-size: 750px auto;
       }
     }
   }
@@ -86,7 +98,7 @@
 
   .promo__note {
     max-width: 1200px;
-    padding-left: 965px;
+    padding-left: 870px;
     box-sizing: border-box;
   }
 

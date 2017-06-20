@@ -25,6 +25,7 @@
 .about-us__item {
   @include font(17px, 18px);
   margin-bottom: 86px;
+  position: relative;
 }
 
 .about-us__item:last-child {
@@ -83,6 +84,20 @@
 
     &--present {
       order: 6;
+    }
+
+    &--ecology,
+    &--style,
+    &--likes {
+      flex-basis: 36%;
+      margin-right: 12%;
+    }
+
+    &--knitting,
+    &--rocket,
+    &--present {
+      flex-basis: 44%;
+      margin-right: 6%;
     }
   }
 }

@@ -1,6 +1,7 @@
 @import "variables";
-@import "mixins";
-@import "normalize";
+@import "global/mixins";
+@import "global/normalize";
+@import "global/fonts";
 @import "global/base";
 @import "blocks/page-header";
 @import "blocks/logo";
@@ -20,7 +21,8 @@
 @import "blocks/order-form";
 @import "blocks/page-footer";
 @import "blocks/copyright";
-@import "blocks/modal";
 @import "blocks/social-link";
 @import "blocks/social-links";
 @import "blocks/icon";
+@import "blocks/modal";
+@import "blocks/modal-overlay";

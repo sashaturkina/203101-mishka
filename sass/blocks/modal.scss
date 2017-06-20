@@ -1,20 +1,68 @@
 .modal {
-  display: none;
+  position: absolute;
+  top: 120px;
+  left: 50%;
+  margin-left: -280px;
+  display: flex;
+  flex-direction: column;
+  width: 573px;
+  background-color: #ffffff;
+  border: 1px solid $border-color;
+  box-shadow: 1px 1px 5px 1px $border-color;
+
+  &--closed {
+    display: none;
+  }
+
+  &--opened {
+  display: block;
+  }
+}
+
+.modal__form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 105px;
+  padding-bottom: 30px;
 }
 
 .modal__title {
   @include font(25px, 30px);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 34px 50px;
 }
 
 .modal__change-size {
   @include font(15px, 30px);
   font-weight: normal;
+  text-align: center;
+  padding: 0 50px;
+  padding-bottom: 23px;
 }
 
 .modal__label-radio {
   @include font(17px, 20px);
   font-weight: bold;
   text-transform: uppercase;
+  display: block;
+  padding: 15px 50px;
+  margin-bottom: 30px;
+  border: 2px solid $border-color;
+  margin-right: 7px;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  &:hover {
+    border: 2px solid $primary-color;
+  }
+}
+
+.modal__input-radio {
+  display: none;
 }
 
 .modal__btn {
@@ -23,4 +71,6 @@
   font-weight: bold;
   color: $text-color--light;
   background-color: $primary-color;
+  border: none;
+  flex-basis: 100%;
 }

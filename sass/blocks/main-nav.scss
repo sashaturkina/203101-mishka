@@ -19,16 +19,6 @@
   list-style: none;
   border-top: 1px solid #ececec;
 
-  & a {
-  display: block;
-  text-decoration: none;
-  padding-top: 30px;
-  padding-bottom: 30px;
-  padding-left: 75px;
-  color: $text-color;
-  box-sizing: border-box;
-  }
-
   &--new {
     display: none;
   }
@@ -36,6 +26,16 @@
   &--sale {
     display: none;
   }
+}
+
+.main-nav__link {
+  display: block;
+  text-decoration: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 75px;
+  color: $text-color;
+  box-sizing: border-box;
 }
 
 .main-nav__item:hover {
@@ -140,18 +140,14 @@
     display: block;
     border: 0;
 
-    & a {
-     padding: 0;
-    }
-
     &--logo {
-      width: 320px;
+      width: 277px;
+      padding: 0;
     }
 
     &--cart {
       order: 3;
       width: auto;
-
     }
 
     &--catalog {
@@ -176,7 +172,7 @@
       border: 1px solid $border-color;
       border-bottom: none;
       border-top: none;
-      margin-right: 0;
+      margin-right: 38px;
     }
 
     &--new {
@@ -186,6 +182,19 @@
     &--sale {
       display: none;
     }
+  }
+
+  .main-nav__link {
+   padding: 32px 0;
+   position: relative;
+
+   &--knitting {
+     padding: 0;
+   }
+
+   &--catalog {
+     padding: 0;
+   }
   }
 }
 
@@ -206,16 +215,18 @@
 
   .main-nav__item {
     margin: 0;
-    width: 190px;
+    width: 183px;
 
     &--logo {
+      flex-basis: 0;
       order: 3;
-      margin-left: 20px;
+      margin-right: 58px;
     }
 
     &--catalog {
       @include font(17px, 24px);
       order: 1;
+      border-right: 1px solid $border-color;
     }
 
     &--knitting {
@@ -225,17 +236,13 @@
 
     &--search {
       order: 4;
-      margin-right: 30px;
       width: 85px;
       margin-right: 0;
-      margin-left: 33px;
     }
 
     &--cart {
-      padding-left: 54px;
       box-sizing: border-box;
-      width: 237px;
-      margin-left: 0;
+      margin-left: 39px;
       order: 5;
     }
 
@@ -253,6 +260,21 @@
       order: 7;
       margin-bottom: -65px;
       margin-right: auto;
+    }
+  }
+
+  .main-nav__link {
+    padding: 32px 0;
+
+    &--new {
+      padding: 0;
+    }
+
+    &--sale {
+      padding: 0;
+    }
+
+    &--search {
     }
   }
 }

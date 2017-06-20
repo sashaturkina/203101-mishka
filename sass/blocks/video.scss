@@ -14,16 +14,14 @@
 .video__title {
   @include font(17px, 24px);
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 25px;
-  margin-left: 90px;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  padding-left: 90px;
 }
 
 .video__player {
   height: 150px;
   margin-bottom: 30px;
-
-  
 }
 
 .video__text {
@@ -35,7 +33,7 @@
 
 .video__description {
   width: 192px;
-  margin: 0 auto;
+  padding: 0 33px;
 }
 
 .video__btn {
@@ -71,12 +69,13 @@
   .video__title {
     @include font(20px, 24px);
     order: 2;
-    margin-top: 0;
-    margin-left: 105px;
-    margin-bottom: 30px;
+    padding-top: 0;
+    padding-left: 105px;
+    padding-bottom: 30px;
   }
 
   .video__description {
+    padding: 0 50px;
     order: 3;
     width: 585px;
   }
@@ -123,10 +122,10 @@
   }
 
   .video__title {
-    margin-top: 95px;
-    margin-left: 75px;
+    padding-top: 95px;
+    padding-left: 75px;
     padding-right: 70px;
-    margin-bottom: 10px;
+    padding-bottom: 10px;
   }
 
   .video__description {

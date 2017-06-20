@@ -1,10 +1,107 @@
 .icon {
   width: 21px;
-  height: 18px;
+  height: 19px;
   vertical-align: middle;
   display: inline-block;
+  background-color: red;
+  position: absolute;
 
   &--cart {
     opacity: 0.2;
+    position: absolute;
+    left: 30px;
+  }
+
+  &--search {
+    opacity: 0.2;
+    position: absolute;
+    left: 30px;
+  }
+
+  &--ecology {
+    width: 33px;
+    height: 38px;
+    left: 8px;
+    top: -59px;
+  }
+
+  &--style {
+    width: 47px;
+    height: 27px;
+    left: 0;
+    top: -57px;
+  }
+
+  &--likes {
+    width: 34px;
+    height: 27px;
+    left: 7px;
+    top: -51px;
+  }
+
+  &--knitting {
+    width: 35px;
+    height: 34px;
+    left: 3px;
+    top: -53px;
+  }
+
+  &--rocket {
+    width: 55px;
+    height: 23px;
+    left: -6px;
+    top: -51px;
+  }
+
+  &--present {
+    width: 33px;
+    height: 32px;
+    left: 3px;
+    top: -52px;
+  }
+
+  &--inst {
+    width: 25px;
+    height: 25px;
+  }
+
+  &--fb {
+    width: 20px;
+    height: 30px;
+  }
+
+  &--tw {
+    width: 24px;
+    height: 21px;
+  }
+
+  &--buy {
+    width: 21px;
+    height: 19px;
+    position: static;
+  }
+}
+
+@media #{$tablet-widths} {
+  .icon {
+
+    &--search {
+      left: 30px;
+      top: 38px;
+    }
+
+    &--cart {
+      left: -51px;
+      top: 35px;
+    }
+  }
+}
+
+@media #{$desktop-widths} {
+  .icon {
+
+    &--cart {
+      top: 35px;
+    }
   }
 }
