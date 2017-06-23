@@ -2,16 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @include container();
   border-top: 1px solid $border-color;
   padding: 15px 0;
-
 }
 
 .copyright__text {
   @include font(18px, 20px);
   font-weight: bold;
   margin-right: 30px;
+  cursor: pointer;
 }
 
 .copyright__link {
@@ -19,20 +18,27 @@
   width: 28px;
   height: 35px;
 }
+
+.copyright:active {
+  .copyright__text {
+    opacity: 0.3;
+  }
+
+  .icon--logo-htmlacademy {
+    opacity: 0.3;
+  }
+}
+
 @media #{$tablet-widths} {
 
   .copyright {
     border: 0;
     width: auto;
     margin: 0;
+    padding-top: 0;
   }
 
   .copyright__text {
     @include font(19px, 20px);
   }
-}
-
-@media #{&desktop-widths} {
-
-  
 }

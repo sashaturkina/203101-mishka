@@ -1,6 +1,6 @@
 .modal {
   position: absolute;
-  top: 120px;
+  top: 1100px;
   left: 50%;
   margin-left: -280px;
   display: flex;
@@ -9,6 +9,7 @@
   background-color: #ffffff;
   border: 1px solid $border-color;
   box-shadow: 1px 1px 5px 1px $border-color;
+  z-index: 15;
 
   &--closed {
     display: none;

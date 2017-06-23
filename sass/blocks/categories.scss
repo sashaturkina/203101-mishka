@@ -4,6 +4,7 @@
 
 .categories__link {
   display: block;
+  position: relative;
   font-family: $font-primary;
   @include font(19px, 24px);
   font-weight: bold;
@@ -23,6 +24,16 @@
   }
 }
 
+.categories__link:active {
+  .icon--toy,
+  .icon--interior {
+    opacity: 0.3;
+  }
+
+  .categories__link-text {
+    opacity: 0.3;
+  }
+}
 
 .categories__link-text {
   display: block;
@@ -37,7 +48,7 @@
     width: 668px;
     margin: 0 auto;
     margin-bottom: 40px;
-    margin-top: -200px;
+    margin-top: -208px;
   }
 
   .categories {
@@ -58,7 +69,8 @@
   .categories__link {
     @include font(20px, 30px);
     flex-basis: 50%;
-    padding-top: 30px;
+    padding-top: 26px;
+    padding-bottom: 40px;
   }
 
   .categories__link:hover {

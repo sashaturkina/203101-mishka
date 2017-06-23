@@ -2,6 +2,7 @@
   @include container();
   padding-left: 30px;
   padding-right: 30px;
+  margin-bottom: 35px;
 }
 
 .contacts__title {
@@ -40,11 +41,23 @@
 }
 
 .contacts__map {
+  position: relative;
   margin-bottom: 40px;
 
    & iframe {
     width: 100%;
     border: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 100px;
+    top: 170px;
+    left: 123px;
+    background-image: url(../img/icon-map-pin.svg);
+    background-repeat: no-repeat;
   }
 }
 
@@ -61,9 +74,16 @@
 
 @media #{$tablet-widths} {
 
+  .contacts {
+    position: relative;
+
+
+  }
+
   .contacts__wrapper {
     padding-right: 50px;
     padding-left: 50px;
+    margin-bottom: 24px;
   }
 
   .contacts__title {
@@ -74,8 +94,8 @@
     &::after {
       content: "";
       position: absolute;
-      top: 10px;
-      right: 20px;
+      top: -16px;
+      right: 3px;
       width: 47px;
       height: 81px;
       background-image: url(../img/icon-flag.svg);
@@ -115,6 +135,11 @@
 
   .contacts__map {
     margin-bottom: 50px;
+
+    &::before {
+      top: 164px;
+      left: 348px;
+    }
   }
 }
 
@@ -126,6 +151,8 @@
     flex-wrap: wrap;
     justify-content: flex-end;
     margin-bottom: 45px;
+
+    
   }
 
   .contacts__wrapper {
@@ -153,6 +180,10 @@
   .contacts__map {
     flex-basis: 50%;
     margin-bottom: 0;
+
+    &::before {
+      left: 237px;
+    }
   }
 
   .contacts__btn {

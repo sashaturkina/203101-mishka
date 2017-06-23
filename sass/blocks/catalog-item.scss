@@ -15,12 +15,24 @@
   box-shadow: 0 5px 5px 0 #cecece;
 }
 
+.catalog-item:active {
+  box-shadow: 0 1px 5px 0 #cecece;
+}
+
 .catalog-item__name {
   font-family: $font-primary;
   @include font(17px, 24px);
   font-weight: bold;
   text-decoration: none;
   color: $text-color;
+}
+
+.catalog-item__name:hover {
+  opacity: 0.6;
+}
+
+.catalog-item__name:active {
+  opacity: 0.3;
 }
 
 .catalog-item__text {
@@ -56,15 +68,30 @@
   border-top: 1px solid $border-color;
 }
 
+.catalog-item__buy:hover {
+  .icon--buy {
+    fill: $primary-color;
+    opacity: 1;
+  }
+}
+
+.catalog-item__buy:active {
+  .icon--buy {
+    fill: $primary-color;
+    opacity: 0.3;
+  }
+}
+
 @media #{$tablet-widths} {
 
   .catalog-item__description {
     width: 50%;
+    padding-bottom: 25px;
   }
 
   .catalog-item {
     display: flex;
-    margin-bottom: 53px;
+    margin-bottom: 55px;
   }
 
   .catalog-item__top {

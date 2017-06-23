@@ -1,22 +1,30 @@
 .social-link {
   font-size: 0;
 
-  &--inst {
-
-    width: 25px;
-    height: 25px;
-
+  &--insta {
+    width: 27px;
+    height: 27px;
   }
 
   &--fb {
-    width: 20px;
-    height: 30px;
-
+    width: 22px;
+    height: 32px;
   }
 
-  &--tw {
-    width: 24px;
-    height: 21px;
-    
+  &--twitter {
+    width: 26px;
+    height: 28px;
+  }
+}
+
+.social-link:hover {
+  .icon {
+    fill: $primary-color;
+  }
+}
+
+.social-link:active {
+  .icon {
+    opacity: 0.3;
   }
 }

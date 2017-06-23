@@ -7,6 +7,20 @@
   height: 36px;
 }
 
+.page-footer__logo:hover {
+
+  .icon--logo-footer {
+    fill: $primary-color;
+  }
+}
+
+.page-footer__logo:active {
+
+  .icon--logo-footer {
+    opacity: 0.3;
+  }
+}
+
 @media #{$mobile-widths-only} {
 
   .page-footer__logo {
@@ -29,9 +43,8 @@
   .page-footer__logo {
     margin: 0;
     padding: 0;
-    margin-right: 78px;
+    margin-right: 69px;
   }
-
 }
 
 @media #{$desktop-widths} {
@@ -40,6 +53,7 @@
   }
 
   .page-footer__logo {
-    margin-right: 80px;
+    margin-right: 33px;
+    padding-top: 20px;
   }
 }

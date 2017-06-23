@@ -13,6 +13,7 @@
   padding: 0;
   margin: 0;
   background-color: #fff;
+  z-index: 50;
 }
 
 .main-nav__item {
@@ -36,14 +37,46 @@
   padding-left: 75px;
   color: $text-color;
   box-sizing: border-box;
+
+  &--logo {
+    padding: 0;
+  }
 }
 
-.main-nav__item:hover {
+.main-nav__link:hover {
   opacity: 0.6;
 }
 
-.main-nav__item:active {
+.main-nav__link--cart:hover {
+  .icon--cart {
+    fill: $primary-color;
+    opacity: 1;
+  }
+}
+
+.main-nav__link:active {
   opacity: 0.3;
+}
+
+.main-nav__link--cart:active {
+  .icon--cart {
+    fill: $primary-color;
+    opacity: 0.3;
+  }
+}
+
+.main-nav__link--search:hover {
+  .icon--search {
+    fill: $primary-color;
+    opacity: 1;
+  }
+}
+
+.main-nav__link--search:active {
+  .icon--search {
+    fill: $primary-color;
+    opacity: 0.3;
+  }
 }
 
 .main-nav--closed .main-nav__item--invisible {
@@ -64,7 +97,7 @@
   position: absolute;
   top: 30px;
   right: 30px;
-  z-index: 2;
+  z-index: 51;
   width: 20px;
   height: 15px;
   cursor: pointer;
@@ -87,7 +120,7 @@
   position: absolute;
   top: 32px;
   right: 32px;
-  z-index: 2;
+  z-index: 51;
   width: 20px;
   height: 15px;
   cursor: pointer;
@@ -195,6 +228,10 @@
    &--catalog {
      padding: 0;
    }
+
+   &--logo {
+     padding: 0;
+   }
   }
 }
 
@@ -274,7 +311,8 @@
       padding: 0;
     }
 
-    &--search {
+    &--logo {
+      padding: 0;
     }
   }
 }

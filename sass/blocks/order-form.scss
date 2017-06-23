@@ -4,6 +4,11 @@
   padding-right: 30px;
 }
 
+.order-form__wrapper--mail,
+.order-form__wrapper--tel {
+  position: relative;
+}
+
 .order-form__item {
   border: none;
   margin: 0;
@@ -21,6 +26,7 @@
   text-transform: uppercase;
   color: $primary-color;
   margin-bottom: 32px;
+  margin-top: 0;
 
   &--fullname {
     margin-bottom: 25px;
@@ -44,7 +50,8 @@
   @include font-labels();
   display: block;
   padding-left: 63px;
-  padding-bottom: 25px;
+  padding-bottom: 22px;
+  cursor: pointer;
 }
 
 .order-form__label-radio::after {
@@ -69,6 +76,21 @@
   border-radius: 50%;
 }
 
+.order-form__label-radio:hover {
+
+  &::after {
+    border-color: $primary-color;
+  }
+}
+
+.order-form__label-radio:active {
+
+  &::after {
+    border-color: $btn-color;
+    opacity: 0.3;
+  }
+}
+
 .order-form__input-radio {
   display: none;
 }
@@ -83,6 +105,7 @@
   display: block;
   padding-left: 63px;
   padding-bottom: 43px;
+  cursor: pointer;
 
   &:last-child {
     padding-bottom: 20px;
@@ -111,6 +134,21 @@
   transform: rotate(-45deg);
 }
 
+.order-form__label-check:hover {
+
+  &::after {
+    border-color: $primary-color;
+  }
+}
+
+.order-form__label-check:active {
+
+  &::after {
+    border-color: $btn-color;
+    opacity: 0.3;
+  }
+}
+
 .order-form__label {
   @include font-labels();
   display: block;
@@ -136,7 +174,10 @@
   }
 }
 
-
+.order-form__input-tel,
+.order-form__input-mail {
+  position: relative;
+}
 
 .order-form__input:last-child {
   margin-bottom: 11px;
@@ -220,7 +261,6 @@
 .order-form__textarea:-ms-input-placeholder {
   opacity: 0.3;
 }
-
 
 .order-form__textarea {
   @include font(17px, 18px);
@@ -416,6 +456,10 @@
 }
 
 @media #{$desktop-widths} {
+
+  .order-form {
+    width: 100%;
+  }
 
   .order-form__wrapper {
     @include container();

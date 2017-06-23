@@ -3,7 +3,6 @@
   height: 19px;
   vertical-align: middle;
   display: inline-block;
-  background-color: red;
   position: absolute;
 
   &--cart {
@@ -18,67 +17,130 @@
     left: 30px;
   }
 
-  &--ecology {
+  &--feature-1 {
     width: 33px;
     height: 38px;
     left: 8px;
     top: -59px;
+    fill: $primary-color;
   }
 
-  &--style {
-    width: 47px;
-    height: 27px;
-    left: 0;
-    top: -57px;
-  }
-
-  &--likes {
-    width: 34px;
-    height: 27px;
-    left: 7px;
-    top: -51px;
-  }
-
-  &--knitting {
-    width: 35px;
+  &--feature-2 {
+    fill: $primary-color;
+    width: 51px;
     height: 34px;
-    left: 3px;
+    left: -5px;
     top: -53px;
   }
 
-  &--rocket {
-    width: 55px;
-    height: 23px;
-    left: -6px;
-    top: -51px;
+  &--feature-3 {
+    width: 47px;
+    height: 36px;
+    left: 0px;
+    top: -60px;
+    fill: $primary-color;
   }
 
-  &--present {
+  &--feature-4 {
+    width: 53px;
+    height: 41px;
+    left: -6px;
+    top: -60px;
+    fill: $primary-color;
+  }
+
+  &--feature-5 {
+    width: 61px;
+    height: 27px;
+    left: -6px;
+    top: -51px;
+    fill: $primary-color;
+  }
+
+  &--feature-6 {
     width: 33px;
     height: 32px;
     left: 3px;
     top: -52px;
+    fill: $primary-color;
   }
 
-  &--inst {
-    width: 25px;
-    height: 25px;
+  &--insta {
+    width: 22px;
+    height: 22px;
+    opacity: 1;
   }
 
   &--fb {
-    width: 20px;
-    height: 30px;
+    width: 16px;
+    height: 25px;
+    opacity: 1;
   }
 
-  &--tw {
+  &--twitter {
     width: 24px;
     height: 21px;
+    opacity: 1;
   }
 
   &--buy {
     width: 21px;
     height: 19px;
     position: static;
+    opacity: 0.2;
+  }
+
+  &--interior {
+    width: 41px;
+    height: 62px;
+    opacity: 0.5;
+    top: 25px;
+    right: 36px;
+  }
+
+  &--toy {
+    width: 61px;
+    height: 61px;
+    opacity: 0.5;
+    top: 22px;
+    right: 26px;
+  }
+
+  &--video {
+    width: 40px;
+    height: 32px;
+    top: 31px;
+    left: 29px;
+    fill: $primary-color;
+  }
+
+  &--phone {
+    width: 25px;
+    height: 24px;
+    top: 39px;
+    right: 10px;
+    opacity: 0.3;
+  }
+
+  &--mail {
+    width: 38px;
+    height: 29px;
+    top: 40px;
+    right: 1px;
+    opacity: 0.3;
+  }
+
+  &--logo-footer {
+    width: 102px;
+    height: 34px;
+  }
+
+  &--logo-htmlacademy {
+    position: static;
+    width: 27px;
+    height: 34px;
+    fill: $primary-color;
+
   }
 }
 
@@ -94,6 +156,31 @@
       left: -51px;
       top: 35px;
     }
+
+    &--play {
+      top: 189px;
+      left: 282px;
+    }
+
+    &--video {
+      top: -6px;
+      left: 36px;
+    }
+
+    &--phone {
+      top: 61px;
+      right: 56px;
+    }
+
+    &--mail {
+      top: 0;
+      right: 49px;
+    }
+
+    &--toy {
+      top: 30px;
+      right: 33px;
+    }
   }
 }
 
@@ -102,6 +189,27 @@
 
     &--cart {
       top: 35px;
+    }
+
+    &--play {
+      left: 290px;
+    }
+
+    &--video {
+      top: 44px;
+      left: 76px;
+    }
+
+    &--feature-1,
+    &--feature-2,
+    &--feature-5,
+    &--feature-6 {
+      top: -48px;
+    }
+
+    &--feature-3,
+    &--feature-4 {
+      top: -52px;
     }
   }
 }

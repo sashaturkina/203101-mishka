@@ -96,21 +96,31 @@
     margin-bottom: 160px;
     padding: 0 50px;
 
+    &::after {
+      content: "";
+      width: 100%;
+      height: 14px;
+      position: absolute;
+      bottom: -150px;
+      background-image: url(../img/bg-zigzag-line.svg);
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
 
     &::before {
-      content: "";
-      position: absolute;
-      width: 350px;
-      height: 450px;
-      top: -75px;
-      left: 0;
-      background-image: url(../img/review@1x.jpg);
-      background-repeat: no-repeat;
-      z-index: -1;
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 450px;
+    top: -75px;
+    left: 0;
+    background-image: url(../img/review@1x.jpg);
+    background-repeat: no-repeat;
+    z-index: -1;
 
-      @media retina {
-        background-image: url(../img/review@2x.jpg);
-      }
+    @media retina {
+      background-image: url(../img/review@2x.jpg);
+    }
     }
 
   }
@@ -171,14 +181,17 @@
 
 @media #{$desktop-widths} {
   .reviews {
-    @include container();
-    width: 1050px;
-    margin: 0 auto;
     margin-bottom: 220px;
+    padding: 0;
 
     &::before {
-      left: 50px;
+      left: 150px;
     }
+
+    &::after {
+      height: 20px;
+    }
+
   }
 
   .reviews__controls {

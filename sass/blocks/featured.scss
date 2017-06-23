@@ -100,7 +100,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    margin-bottom: 55px;
+    margin-bottom: 46px;
     flex-basis: 100%;
   }
 
@@ -123,7 +123,7 @@
   .featured__text {
     @include font(17px, 30px);
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 35px;
     padding-right: 40px;
   }
 
@@ -138,12 +138,12 @@
   }
 
   .featured__footer {
-    margin-top: -115px;
+    margin-top: -107px;
     width: 290px;
   }
 
   .featured .featured__btn {
-    width: 286px;   //не срабатывает
+    width: 286px;
 
   }
 
@@ -177,6 +177,7 @@
 
   .featured__header {
     align-items: center;
+    margin-bottom: 51px;
   }
 
   .featured__title {
